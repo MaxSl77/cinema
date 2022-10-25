@@ -12,7 +12,7 @@
 
                 <form class="form-fields" method="" action="">
                     <input name="email" type="email" placeholder="Электронная почта" required/>
-                    <input name="number" type="number" placeholder="Номер телефона" required/>
+                    <input name="number" type="text" placeholder="Номер телефона" required/>
                     <input name="name" type="text" placeholder="Ф.И.О." required/>
                     <input name="button" class="button" type="submit" value="Отправить"/>
                 </form>
