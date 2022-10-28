@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('home');
 Route::get('/about', [\App\Http\Controllers\IndexController::class, 'about'])->name('about');
-Route::get('/contact', [\App\Http\Controllers\IndexController::class, 'contact'])->name('contact');
-Route::post('/contact_process', [\App\Http\Controllers\IndexController::class, 'contactForm'])->name('contact_process');
+Route::get('/contact', [\App\Http\Controllers\MailController::class, 'contact'])->name('contact');
+Route::post('/contact_process', [\App\Http\Controllers\MailController::class, 'contactForm'])->name('contact_process');

@@ -16,14 +16,4 @@ class IndexController extends Controller
     public function about() {
         return view('about');
     }
-
-    public function contact() {
-        return view('contact');
-    }
-
-    public function contactForm(FormContactRequest $request) {
-        Mail::to("mslabko77@gmail.com")->send(new ContactFormMail($request->validated()));
-
-        return redirect(route('contact'));
-    }
 }

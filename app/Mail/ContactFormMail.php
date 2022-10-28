@@ -45,6 +45,7 @@ class ContactFormMail extends Mailable
     {
         return new Content(
             view: 'emails',
+            with: $this->formData,
         );
     }
 
@@ -56,9 +57,5 @@ class ContactFormMail extends Mailable
     public function attachments()
     {
         return [];
-    }
-
-    public function build() {
-        return $this->view('emails')->with($this->formData);
     }
 }

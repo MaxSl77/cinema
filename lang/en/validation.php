@@ -170,6 +170,10 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'Email address',
+        'name' => 'Your name',
+        'phone' => 'Phone number',
+    ],
 
 ];

@@ -12,14 +12,17 @@
 
                 <form class="form-fields" method="POST" action="{{route('contact_process')}}">
                     @csrf
+                    <label for="email">{{__('validation.attributes.email')}}</label>
                     <input class="input @error('email') border-red-500 @enderror" name="email" type="email" placeholder="Электронная почта"/>
                     @error('email')
                     <div class="text-red-400">{{ $message }}</div>
                     @enderror
-                    <input class="input @error('phonefield') border-red-500 @enderror" name="phonefield" type="text" placeholder="Номер телефона"/>
-                    @error('phonefield')
+                    <label for="phone">{{__('validation.attributes.phone')}}</label>
+                    <input class="input @error('phone') border-red-500 @enderror" name="phone" type="text" placeholder="Номер телефона"/>
+                    @error('phone')
                     <div class="text-red-400">{{ $message }}</div>
                     @enderror
+                    <label for="name">{{__('validation.attributes.name')}}</label>
                     <input class="input @error('name') border-red-500 @enderror" name="name" type="text" placeholder="Ф.И.О."/>
                     @error('name')
                     <div class="text-red-400">{{ $message }}</div>

@@ -25,7 +25,7 @@ class FormContactRequest extends FormRequest
     {
         return [
             'email' => 'email:rfc,dns',
-            'phonefield' => 'phone:AUTO,BY,US,BE',
+            'phone' => 'phone:AUTO,BY,US,BE',
             'name' => 'required|min:1'
         ];
     }
