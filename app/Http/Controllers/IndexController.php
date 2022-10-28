@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FormContactRequest;
+use App\Mail\ContactFormMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class IndexController extends Controller
 {
@@ -12,9 +15,5 @@ class IndexController extends Controller
 
     public function about() {
         return view('about');
-    }
-
-    public function contact() {
-        return view('contact');
     }
 }

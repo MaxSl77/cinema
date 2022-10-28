@@ -124,7 +124,7 @@
     margin: 15px 0;
 }
 
-input {
+.input {
     height: 45px;
     width: 100%;
     color: black;
@@ -154,6 +154,14 @@ input {
     line-height: 45px;
     cursor: pointer;
     margin-top: 13px;
+}
+
+.text-red-400 {
+    color: red;
+}
+
+.border-red-500 {
+    border-color: red;
 }
 
 @media (max-width: 868px) {
