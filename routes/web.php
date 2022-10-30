@@ -17,3 +17,5 @@ Route::get('/', [\App\Http\Controllers\IndexController::class, 'index'])->name('
 Route::get('/about', [\App\Http\Controllers\IndexController::class, 'about'])->name('about');
 Route::get('/contact', [\App\Http\Controllers\MailController::class, 'contact'])->name('contact');
 Route::post('/contact_process', [\App\Http\Controllers\MailController::class, 'contactForm'])->name('contact_process');
+Route::get('/movies', [\App\Http\Controllers\MovieController::class, 'index'])->name('movies');
+Route::resource('movie', \App\Http\Controllers\MovieController::class);
