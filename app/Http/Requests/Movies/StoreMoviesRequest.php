@@ -27,7 +27,7 @@ class StoreMoviesRequest extends FormRequest
             'name' => 'required|min:1|max:255',
             'year' => 'required|integer',
             'genre' => 'required|min:1|max:50',
-            'preview' => 'required|min:1|max:100',
+            'preview' => 'required|min:1|max:75',
             'description' => 'required|min:100',
             'thumbnail' => 'required|image',
         ];

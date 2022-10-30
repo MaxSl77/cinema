@@ -11,7 +11,7 @@ class MovieController extends Controller
 {
     public function index()
     {
-        $movies = Movies::all();
+        $movies = Movies::paginate(4);
         return view('movies', [
             'movies' => $movies
         ]);
@@ -30,7 +30,7 @@ class MovieController extends Controller
 
     public function edit(Movies $movie)
     {
-        return view('movies.create', [
+        return view('movies.update', [
             'movie' => $movie
         ]);
     }

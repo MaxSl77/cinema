@@ -27,7 +27,7 @@ class UpdateMoviesRequest extends FormRequest
             'name' => 'min:1|max:255',
             'year' => 'integer',
             'genre' => 'min:1|max:50',
-            'preview' => 'min:1',
+            'preview' => 'min:1|max:100',
             'description' => 'min:100',
             'thumbnail' => 'image',
         ];

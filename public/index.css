@@ -6,7 +6,7 @@
 }
 
 .content {
-  max-width: 1250px;
+  max-width: 1300px;
   margin: auto;
   padding: 0 30px;
 }
@@ -41,7 +41,6 @@
 .menu-list li {
   list-style: none;
 }
-
 .menu-list li a {
   color: #fff;
   font-size: 18px;
@@ -50,7 +49,6 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 .menu-list li a:hover {
   color: cyan;
 }
@@ -165,26 +163,26 @@
 }
 .add-movie:hover {
   color: cyan;
+  text-decoration: none;
 }
 
 .card {
+  display: inline-block;
   position: relative;
   background-color: #fff;
   border-radius: 20px;
   height: 460px;
   width: 296px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 10px 20px 0;
 }
-
 .card .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
   position: relative;
-  z-index: 100;
 }
-
 .card .image {
   height: 140px;
   width: 140px;
@@ -193,67 +191,51 @@
   background: #fff;
   box-shadow: 0 -1px 4px 2px rgba(0, 0, 0, 0.25);
 }
-
-.card .image img {
+.card .image .img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #fff;
 }
-
-.box1 {
-  position: absolute;
-  width: 100%;
-  height: 30%;
-  border-radius: 20px 20px 0 0;
-  background: linear-gradient(106.32deg, #f3a60f 14.23%, rgba(255, 25, 25, 0) 139.7%);
-}
-
 .card .name-movie {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
 }
-
-.name-movie .name {
+.card .name-movie .name {
   font-size: 20px;
   font-weight: 600;
   color: #222;
 }
-
-.name-movie .genre {
+.card .name-movie .genre {
   font-size: 15px;
   font-weight: 500;
   color: #333;
   margin: 5px;
 }
-
-.name-movie .year {
+.card .name-movie .year {
   font-size: 15px;
   font-weight: 500;
   color: #333;
 }
-
 .card .movie-about {
   display: flex;
   text-align: center;
   color: #444;
   margin-bottom: 5px;
 }
-
 .card .movie-button {
+  position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 350px;
 }
-
 .card .b1 button {
   background: #f3a60f;
 }
-
 .card .movie-button button {
   outline: none;
   border: none;
@@ -264,9 +246,16 @@
   transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .card .movie-button button:hover {
   opacity: 0.8;
+}
+
+.box1 {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(106.32deg, #f3a60f 14.23%, rgba(255, 25, 25, 0) 139.7%);
 }
 
 .text-red-400 {
@@ -275,6 +264,35 @@
 
 .border-red-500 {
   border-color: red;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.movie {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.movie__heading3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.movie__heading4 {
+  text-align: center;
+}
+
+.movie__image {
+  border-radius: 10px;
+  max-width: 350px;
+  max-height: 300px;
+}
+
+.movie__description {
+  max-width: 775px;
 }
 
 @media (max-width: 868px) {
