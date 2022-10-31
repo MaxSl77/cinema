@@ -7,7 +7,7 @@
 }
 
 .content {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: auto;
     padding: 0 30px;
 }
@@ -42,19 +42,19 @@
 
 .menu-list li {
     list-style: none;
-}
 
-.menu-list li a {
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 25px;
-    text-decoration: none;
-    transition: all .3s ease;
-}
+    & a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-left: 25px;
+        text-decoration: none;
+        transition: all .3s ease;
 
-.menu-list li a:hover {
-    color: cyan;
+        &:hover {
+            color: cyan;
+        }
+    }
 }
 
 .banner {
@@ -67,21 +67,24 @@
 
 .welcome,
 .about,
-.contact {
+.contact,
+.movies {
     padding: 40px 0;
 }
 
 .welcome .title,
 .about .title,
-.contact .title {
+.contact .title,
+.movies .title, {
     font-size: 35px;
     font-weight: 700;
 }
 
 .welcome p,
 .about p,
-.contact p {
-    padding-top: 20px;
+.contact p,
+.movies p, {
+    padding-top: 10px;
     text-align: justify;
 }
 
@@ -156,12 +159,159 @@
     margin-top: 13px;
 }
 
+//movie card
+.add-movie {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover {
+        color: cyan;
+        text-decoration: none;
+    }
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 460px;
+    width: 296px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    margin: 0 10px 20px 0;
+
+    & .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+    }
+
+    & .image {
+        height: 140px;
+        width: 140px;
+        border-radius: 55%;
+        padding: 3px;
+        background: #fff;
+        box-shadow: 0 -1px 4px 2px rgba(0, 0, 0, .25);
+
+        & .img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+    }
+    & .name-movie {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+
+        & .name {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+        }
+
+        & .genre {
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+            margin: 5px;
+        }
+
+        & .year {
+            font-size: 15px;
+            font-weight: 500;
+            color: #333;
+        }
+    }
+    & .movie-about {
+        display: flex;
+        text-align: center;
+        color: #444;
+        margin-bottom: 5px;
+    }
+
+    & .movie-button {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 350px;
+    }
+
+    & .b1 button {
+        background: #f3a60f;
+    }
+
+    & .movie-button button {
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 8px 22px;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: all .3s ease;
+        cursor: pointer;
+    }
+
+    & .movie-button button:hover {
+        opacity: .8;
+    }
+}
+
+.box1 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(106.32deg, #f3a60f 14.23%,
+        rgba(255, 25, 25, 0) 139.7%);
+}
+//end movie card
+
 .text-red-400 {
     color: red;
 }
 
 .border-red-500 {
     border-color: red;
+}
+
+.main {
+    margin-top: 20px;
+}
+
+.movie {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie__heading3 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.movie__heading4 {
+    text-align: center;
+}
+
+.movie__image {
+    border-radius: 10px;
+    max-width: 350px;
+    max-height: 300px;
+}
+
+.movie__description {
+    max-width: 775px;
 }
 
 @media (max-width: 868px) {
@@ -171,10 +321,10 @@
 
     .icon {
         display: block;
-    }
 
-    .icon.hide {
-        display: none;
+        &.hide {
+            display: none;
+        }
     }
 
     .navbar .menu-list {
@@ -189,17 +339,17 @@
         padding: 40px 0;
         text-align: center;
         transition: all .3s ease;
-    }
 
-    .navbar .menu-list.active {
-        left: 0;
-    }
+        &.active {
+            left: 0;
+        }
 
-    .navbar .menu-list li {
-        margin-top: 45px;
-    }
+        & li {
+            margin-top: 45px;
 
-    .navbar .menu-list li a {
-        font-size: 24px;
+            & a {
+                font-size: 24px;
+            }
+        }
     }
 }

@@ -172,8 +172,13 @@ return [
 
     'attributes' => [
         'email' => 'Email address',
-        'name' => 'Your name',
+        'name' => 'Name',
         'phone' => 'Phone number',
+        'year' => 'Cinema year',
+        'genre' => 'Cinema genre',
+        'preview' => 'Cinema preview',
+        'description' => 'Cinema description',
+        'thumbnail' => 'Cinema image',
     ],
 
 ];
