@@ -24,4 +24,8 @@ class IndexController extends Controller
             'movie' => $movie
         ]);
     }
+
+    public function signUp() {
+        return view('signUp');
+    }
 }

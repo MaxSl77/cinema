@@ -11,6 +11,7 @@
             <li><a href="{{route('about')}}">About Us</a></li>
             <li><a href="{{route('contact')}}">Contact Us</a></li>
             <li><a href="{{route('movies')}}">Movies</a></li>
+            <li><a href="{{route('sign_up')}}">Sign Up</a></li>
         </ul>
         <div class="icon menu-btn">
             <i class="fas fa-bars"></i>

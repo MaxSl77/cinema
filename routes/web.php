@@ -20,3 +20,5 @@ Route::post('/contact_process', [\App\Http\Controllers\MailController::class, 'c
 Route::get('/movies', [\App\Http\Controllers\MovieController::class, 'index'])->name('movies');
 Route::get('/movies/{id}', [\App\Http\Controllers\IndexController::class, 'showMovie'])->name('movies_show');
 Route::resource('movie', \App\Http\Controllers\MovieController::class);
+Route::get('/sign_up', [\App\Http\Controllers\IndexController::class, 'signUp'])->name('sign_up');
+

@@ -174,6 +174,8 @@ return [
         'email' => 'Email address',
         'name' => 'Name',
         'phone' => 'Phone number',
+        'password' => 'Password',
+        'confirm_password' => 'Confirm password',
         'year' => 'Cinema year',
         'genre' => 'Cinema genre',
         'preview' => 'Cinema preview',
