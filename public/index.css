@@ -295,6 +295,10 @@
   max-width: 775px;
 }
 
+.checkbox {
+  border: none;
+}
+
 @media (max-width: 868px) {
   body.disabled {
     overflow: hidden;
